@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+		<meta name="referrer" content="no-referrer" />
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reset.css">
@@ -21,6 +21,11 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			.l{
+				text-align: left;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -39,23 +44,60 @@
 					<section>
 						<h3>痛点</h3>
 					</section>
-					<section>
-						1.前端开发重度依赖开发环境，开发效率低。
+					<section data-background="#ccc">
+						<ul>
+							<li>前端开发重度依赖开发环境，开发效率低。</li>
+							<li>前后端职责依旧纠缠不清,可维护性越来越差。</li>
+						</ul>
 					</section>
-					<section>
-						2.前后端职责依旧纠缠不清。
+					<section data-background="#fff">
+						<span></span>
+						<div style="display: flex;">
+							<img src="https://hbimg.huabanimg.com/a98a51c8380e23d7d6c9173578ef8e1967b56f173170-LyOXYe_fw658" alt="bk" style="box-shadow:none">
+							<ul>
+								<li>写各种html、css、js</li>
+								<li>跑到各种前端模块网站上手动下载各种库</li>
+								<li>一遍遍刷新浏览器，查看效果</li>
+								<li>最终压缩各种静态文件</li>		
+							</ul>
+						</div>
 					</section>
-					<section>
-						<img src="https://hbimg.huabanimg.com/bc82ebbee863aa6e9f8843eefb585c47fb2513929614-SzNtR7_fw658" alt="">
+					<section data-background="#fff">
+						<p>实现</p>
+						<img referrer="no-referrer|origin|unsafe-url" src="https://hbimg.huabanimg.com/bc82ebbee863aa6e9f8843eefb585c47fb2513929614-SzNtR7_fw658">
+					</section>
+					<section data-background="#fff">
+						<p>开发流程</p>
+						<img referrer="no-referrer|origin|unsafe-url" src="https://hbimg.huabanimg.com/69366fcaa04992b3be9cd3ca9494f106511c3d3b3661-FAzhvi_fw658">
 					</section>
 				</section>
-				<section>Slide 2</section>
-				<section>Slide 3</section>
-				<section>Slide 4</section>
-				<section>Slide 5</section>
-				<section>Slide 6</section>
-				<section>Slide 7</section>
-				<section>Slide 8</section>
+				<section data-background="#30A0F2" style="color: #fff">前端解决方案：工程化</section>
+				<section data-background="#30A0F2" style="color: #fff">
+					<p class="l">所用技术栈：</p>
+					<div>
+						<img style="width: 15%;display: inline-block;" src="https://hbimg.huabanimg.com/ae808548182a767260a655ea7305338bbe62431a2318-qwcBec_fw658" alt="webpack">
+						<img style="width: 15%;display: inline-block;" src="https://hbimg.huabanimg.com/555257b8c5e7ecf34ce4f9b952eeaf006adfa339d7b-2XAuZp_fw658" alt="vue">
+						<img style="width: 32%;display: inline-block;" src="https://hbimg.huabanimg.com/5470d8f9744c5eb68405c75d99d3ec8b9835da773fab-39SP4n_fw658" alt="babel">
+						<img style="width: 30%;display: inline-block;" src="https://hbimg.huabanimg.com/c2f1ad281bb39654da6fd3e6794a6c182e439d7929f2-Vgidms_fw658" alt="node">
+						<img style="width: 25%;display: inline-block;" src="https://hbimg.huabanimg.com/9a1bb762a99cc767580890b4ed288dd9c9efa97d282a-q4Ifbc_fw658" alt="npm">
+
+					</div>
+				</section>
+				<section data-background="">
+					<p>安装node</p>
+					<img src="https://hbimg.huabanimg.com/8be3068d07dbceca887da91d29b7874018aca0f78705-IoHY7i_fw658" alt="node-v">
+					<p style="font-size:18px">Tips: 1.最好使用n|nvm管理工具  2.推荐使用12.13.1 LTS 版</p>
+				</section>
+				<section data-markdown>
+					<p>安装 vue-cli （默认使用vue-cli3.0 零配置）</p>
+					<div>
+							npm install -g @vue/cli
+							# OR
+							yarn global add @vue/cli
+					</div>
+
+				</section>
+				<section>END</section>
 			</div>
 		</div>
 
